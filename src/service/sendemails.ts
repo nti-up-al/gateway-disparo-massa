@@ -1,6 +1,6 @@
-import { Usuario } from "../types/usuario";
+import { Contribuinte } from "../types/contribuinte";
 import { sendPost } from "./sendRequest";
 
-export const sendEmails  =  async (usuarios : Usuario[])=>{
-    await sendPost(usuarios);
-}
+export const sendEmails = async (contribuintes: Contribuinte[]) => {
+  sendPost(contribuintes);
+};
